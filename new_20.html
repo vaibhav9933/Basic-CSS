@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud-size & background origin</title>
+    <style>
+        body{
+            background: tan;
+        }
+        /* CSS BAckground-Size Value
+        .auto
+        .length(px)
+        .percenteage(%)
+        .cover
+        .contain
+        */
+        #box{
+            width: 800px;
+            height: 600px;
+            padding: 25px;
+            text-align: justify;
+            border: 20px dotted black;
+            background-color: white;
+            background-image: url(images/i2.webp);
+            background-repeat: no-repeat;
+            background-size: 600px;
+
+            /*background ogigin
+            .content-box
+            .padding-box
+            .border-box
+            .*/
+
+            background-origin: padding-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav: CSS Background-size value & background origin</h1>
+    <div id="box">
+        Donec cursus pellentesque mauris, non iaculis ligula sagittis at. Nulla ut pretium mauris. In vel aliquam risus. Suspendisse nulla ipsum, maximus sed finibus et, tincidunt at neque. Ut quis eros id quam finibus placerat. In ut felis a orci rhoncus lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum vulputate, lacus vitae vulputate egestas, nisl erat auctor lacus, sed malesuada ligula massa at orci. Aliquam molestie vulputate nulla at scelerisque. Mauris euismod sem tincidunt purus fringilla consequat. Cras vel quam euismod, pretium lectus ut, congue mi. Nulla gravida egestas massa et hendrerit. Mauris placerat volutpat libero vitae maximus. Nunc dignissim tortor a felis fermentum, ut imperdiet nunc auctor. Phasellus varius justo mollis ullamcorper vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </div>
+    
+</body>
+</html>
