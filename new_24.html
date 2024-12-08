@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background-Blend-Mode</title>
+    <title>Background-Blend-Mode & mix-blend mode</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -12,9 +12,18 @@
             width: 440px;
             height: 440px;
             border: 2px solid black;
-            background-image:linear-gradient(to right , red,yellow), url('images/flowers.jpg');
-            background-blend-mode:overlay;
+            background-repeat: none;
+            background-image:linear-gradient(to right , red,yellow), url('images/i1.jpg');
+            background-blend-mode:soft-light;
         }
+        h2{
+            background: red;
+            text-align: center;
+            font-size: 55px;
+            margin-top: 150px;
+            mix-blend-mode:multiply;
+        }
+        
         /* CSS Background-Blend-Mode Values
         .normal
         .multiple
@@ -36,7 +45,7 @@
     </style>
 </head>
 <body>
-    <h1>Hello Vaibhav: CSS Background-Blend-Mode</h1>
+    <h1>Hello Vaibhav: CSS Background-Blend-Mode & mix-balnde-mode</h1>
     <div id="box">
         <h2>Background-blade-mode</h2>
     </div>
