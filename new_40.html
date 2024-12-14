@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform-3D</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .base{
+            width: 350px;
+            height: 250px;
+            background: gray;
+            font-size: 10px;
+            text-align:center;
+            margin: 100px 0  0 100px;
+        }
+        #box{
+            width: 350px;
+            height: 250px;
+            background: tomato;
+    
+            transform: perspective(800px) scale3d(1,1,2) rotateX(60deg);
+        }
+        /*CSS Transform _3D Values
+        .rotateX(angle)
+        .rotateY(angle)
+        .rotateZ(angle)
+        .rotate3d(x,y,z,angle)
+        .translateZ(z)
+        .translate3d(x,y,z)
+        .scale3d(x,y,z)
+        .scaleZ(z)
+        .perspective(n)
+        .matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,)
+        .none
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav : CSS 3D-transform</h1>
+    <div class="base">
+        <div id="box">hello vaibhav</div>
+    </div>
+</body>
+</html>
