@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prespective</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .base{
+            width: 350px;
+            height: 250px;
+            background: gray;
+            font-size: 10px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+            perspective: 800px;
+            perspective-origin: center left;
+        }
+
+        #box{
+            width: 350px;
+            height: 250px;
+            background: tomato;
+
+            transform:rotatey(50deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Viabhav:CSS Perspective</h1>
+    <div class="base">
+        <div id="box">Hello_world</div>
+    </div>
+    
+</body>
+</html>
