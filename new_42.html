@@ -8,30 +8,34 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        .base{
-            width: 350px;
-            height: 250px;
-            background: gray;
-            font-size: 10px;
+        div{
+            font-size: 20px;
             text-align: center;
-            margin: 100px 0 0 100px;
-            perspective: 800px;
-            perspective-origin: center left;
+            box-sizing: border-box;
         }
-
-        #box{
-            width: 350px;
+        .parent{
+            width: 400px;
             height: 250px;
-            background: tomato;
-
-            transform:rotatey(50deg);
+            margin:0 0 70px 100px;
+            background: greenyellow;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style:preserve-3d ;
+        }
+        #box{
+            width: 400px;
+            height: 250px;
+            background: pink;
+            padding-top: 20px;
+            transform: rotateX(60deg);
+            transform-origin: bottom;
         }
     </style>
 </head>
 <body>
-    <h1>Hello Viabhav:CSS Perspective</h1>
-    <div class="base">
-        <div id="box">Hello_world</div>
+    <h1 style="margin-bottom: 50px;"> Hello Vaibhav : CSS Transform-style</h1>
+    <div class="parent">
+        <div id="box">Hello Janni</div>
     </div>
     
 </body>
