@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .box{
+            width: 32%;
+            border: 2px solid red;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-right: 2%;
+            margin-bottom: 13px;
+        }
+        .last{
+            margin-right: 0;
+        }
+        @media screen  and(max-width:95px) {
+            .box{
+                width: 48px;
+            }
+            
+        }
+        @media screen and ( max-width:800px) {
+            .box{
+                width: 100%;
+            }
+            
+        }
+        /*CSS object-fit Values
+        .fill
+        .contain
+        .cover
+        .scale-down
+        .none*/
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 30px;">Hello Vaibhav : CSS Object-fit</h1>
+    <div class="container">
+        <div class="box">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores reprehenderit illum voluptates sequi ex! Aliquid fuga illo assumenda nobis ipsum, distinctio, hic nesciunt, eum at similique repudiandae delectus? Exercitationem, harum.</p>
+        </div>
+        <div class="box">
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus pariatur impedit ex provident eveniet officiis minus doloremque unde neque, magnam ratione sequi quae quaerat doloribus eum corporis, assumenda id! Minus?</p>
+        </div>
+        <div class="box last">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ex possimus doloribus veniam neque aliquam dolor quam, nostrum explicabo cupiditate perferendis optio tenetur placeat voluptatum illum sequi et architecto. Laudantium!</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+</body>
+</html>

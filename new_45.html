@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation-Fill-mode</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background: black;
+            margin-left: 20px;
+            animation-name: sample;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-fill-mode:both;
+        }
+        @keyframes sample {
+            0% { background: yellow; width: 250px; }
+            50% { background: green; width: 350px; }
+            100% { background: red; width: 450px; }
+        }
+        /*CSS Animation-fill-mode Values
+        .none
+        .forwards
+        .backwards
+        .both
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello Vibhav: CSS Animation-fill-Mode</h1>
+    <div class="box"></div>
+</body>
+</html>
