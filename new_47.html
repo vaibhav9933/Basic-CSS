@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-select & Box-Decoration-Break</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+            padding-left: 30px;
+        }
+        #box{
+            width:500px ;
+            height: 300px;
+            border: 2px solid gray;
+            background: wheat;
+            padding: 10px;
+            margin-left: 30px;
+            user-select: all;
+
+        }
+        span{
+            background-image:linear-gradient(red , yellow);
+            font-size: 21px;
+            line-height: 50px;
+            border: 2px solid brown;
+            border-radius: 5px;
+            box-decoration-break:clone;
+            padding: 10px;
+        }
+        /*CSS User_select Value
+        .Auto
+        .None
+        .Text
+        .all
+        */
+
+        /*CSS Box-Decoration-Break Values
+        .slice
+        .clone
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello vaibhav: CSS User-Select</h1>
+    <div id="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, error ut! Voluptatibus soluta rem tenetur ullam quibusdam modi itaque? Porro incidunt reprehenderit voluptatem rem doloribus molestias vitae reiciendis aperiam beatae.
+    </div>
+    <br/><br/>
+   <hr width="100%" size="5" color="red"/> <br>
+   <h2>Hello Viabhva :CSS Box-Decoration-Break</h2>
+   <span>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit <br> Minima necessitatibus <br> quisquam aperiam, totam reiciendis natus <br> in reprehenderit possimus sed nobis quia dolorum quams.</span>
+</body>
+</html>
