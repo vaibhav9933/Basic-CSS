@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute function</title>
+    <style>
+    body{font:19px/25px arial;padding:10px 0 0 20px;}
+    h1{font-size: 32px; margin-bottom:35px}
+    p{
+        font-size:37px;
+        margin:200px 0 0 50px;
+    }
+    p:hover::after{
+        content: attr(data-caption);
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav : CSS Attribute Function</h1>
+
+    <p class="test" data-caption="Vaibhav">Heeeeee</p>
+    
+</body>
+</html>
