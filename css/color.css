@@ -1,0 +1,33 @@
+body{
+    background-color: slategray;
+}
+#header{
+background: crimson;
+color: black;
+}
+#menu{
+    color: mediumaquamarine;
+    color: blue;
+    background-color:beige;
+}
+#menu a{
+    color: black;
+}
+#menu a:hover{
+    background: crimson;
+}
+#content ::selection{
+    background: crimson;
+    color: black;
+}
+
+#sidebar{
+    background: lavender;
+}
+#sidebara:hover{
+color: crimson;
+}
+#footer{
+    background: crimson;
+    color: black;
+}
