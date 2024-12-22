@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;}
+        h1{ padding:0 0 0 40px;}
+
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows: 100px 100px 100px;
+
+            /* grid-row-gap:15px;
+               grid-column-gap:15px; */
+
+
+               grid-gap: 15px 50px;
+
+
+        }
+        .items1{
+            background: orange;
+        }
+        .items2{
+            background: rgb(27, 83, 186);
+        }
+        .items3{
+            background: rgb(22, 176, 40);
+        }
+        .items4{
+            background: rgb(157, 12, 24);
+        }
+        .items5{
+            background: rgb(240, 213, 163);
+        }
+        .items6{
+            background: rgb(155, 69, 152);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav : CSS Grid</h1>
+    <div class="container">
+        <div class="items items1">First</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Six</div>
+    </div>
+    
+</body>
+</html>
