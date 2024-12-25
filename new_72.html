@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping grid</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;}
+        h1{ padding: 0 0 0 40px; }
+
+        .container{
+            background: lightgray;
+            width:300px ;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,150px);
+        }
+
+        .items{
+            max-width: 150px;
+        }
+        .items1{background: orangered;
+        grid-column: 1 / span2;
+        grid-row: 1 / span 2;
+        align-self:start;
+        }
+        .items2{background: yellowgreen;
+        grid-column: 1 / span2;
+        grid-row: 1 / span 2;
+        align-self: center;
+        justify-self: center;
+        z-index: 1;
+        }
+        .items3{background: mediumseagreen;
+            grid-column: 1 / span2;
+        grid-row: 1 / span 2;
+        align-self: end;
+        justify-self: end;
+        z-index: 2;
+        }
+        .items4{background: hotpink;}
+        /*.items5{background: rosybrown;}
+        .items6{background: orchid;}
+        .items7{background:goldenrod;}
+        .items8{background: grey;} */
+        
+
+
+        .items{ color: #f0ecec; font-size: 20px; font-weight:bold;padding: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav :overlapping grid</h1>
+    <div class="container">
+        <div class="items items1">one Lorem, ipsum dolor sit amet consectetur adipisicing elit.hdgh adjbd iadhd </div>
+        <div class="items items2">Second Lorem ipsum dolor sit amet, consectetur adipisicing elit. dsjf sfjnfj</div>
+        <div class="items items3">Third Lorem ipsum dolor sit amet, consectetur adipisicing elit. dsjf sfjnf</div>
+        <!--<div class="items items4">Four</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div> -->
+        
+
+    </div>
+    
+</body>
+</html>
