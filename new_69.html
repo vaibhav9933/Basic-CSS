@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-fill & Auto-fit</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;}
+        h1{ padding: 0 0 0 40px; }
+
+        .container{
+            background: wheat;
+            width:80% ;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(Auto-fit, minmax(150px,1fr));
+            grid-template-rows: repeat(2 ,100px);
+            grid-auto-rows: 80px;
+        }
+        .items1{background: orangered;}
+        .items2{background: yellowgreen;}
+        .items3{background: mediumseagreen;}
+        .items4{background: hotpink;}
+        .items5{background: rosybrown;}
+        .items6{background: orchid;}
+        .items7{background:goldenrod;}
+        .items8{background: grey;}
+        
+
+
+        .items{ color: #f0ecec; font-size: 20px; font-weight:bold;padding: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav : Grid  Auto-fill & Auto-fit</h1>
+    <div class="container">
+        <div class="items items1">one</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Four</div>
+        <!-- <div class="items items5">Fifth</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div> -->
+        
+
+    </div>
+    
+</body>
+</html>
