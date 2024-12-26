@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Nested-Flex</title>
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif;}
+        h1{ padding: 0 0 0 40px; }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 0px;
+            border: 3px solid #000;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .items{
+            background: orangered;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px;
+            height: 100px;
+        }
+
+        .item1{background: orangered;}
+        .item2{background: rgb(216, 207, 17);
+        display: flex;
+
+        }
+        .item2 > .subitem{
+            background: rgb(225, 18, 108);
+            color: rgb(40, 220, 160);
+            flex-grow: 1;
+            margin: 5px;
+        }
+        .item3{background: mediumseagreen;}
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav :  CSS Nested-Flex</h1>
+    <div class="container">
+        <div class="items item1">one</div>
+        <div class="items item2">
+            <div class="subitem subitem1">A</div>
+            <div class="subitem subitem2">B</div>
+            <div class="subitem subitem3">C</div>
+        </div>
+        <div class="items item3">Third</div>
+
+    </div>
+    
+</body>
+</html>
