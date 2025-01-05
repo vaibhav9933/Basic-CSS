@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS current Colour</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        #test{
+            color: rgb(17, 255, 0);
+            width: 500px;
+            padding: 10px;
+            margin: 0 auto;
+            border: 2px solid currentColor;
+        }
+        #test h2{
+            border-bottom: 2px solid currentColor;
+        }
+        #test .readmore{
+            color: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Vaibhav : Current Color</h1>
+    <div id="test">
+        <h2>hello vaibhav</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae facilis quos quisquam laborum, incidunt ducimus neque obcaecati tempora amet beatae ipsum dolores, sapiente minima repellendus repudiandae nihil deleniti mollitia natus.</p>
+    <a class="readmore" href="">readmored</a>
+    </div>
+</body>
+</html>
