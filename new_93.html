@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>::file-selector-button & backdrop-filter</title>
+    <style>
+        /*CSS Pseudo-elements
+        .::after
+        .::before
+        .::first-letter
+        .::first-line
+        .::selector
+        .::placehonder
+        .::marker
+        .::file-selector-button
+        */
+        input[type=file]::-webkit-file-upload-button{
+            background-color: #a28bfa;
+            border: 1px sold #6c5ce7;
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+        input[type=file]::-webkit-file-upload-button:hover{
+            background-color: #81ecec;
+            border: 1px sold #00ec90;
+        }
+
+        /*Backdrop-filter values
+        . blur
+        . brightness
+        . contrast
+        . drop-shadow
+        . grayscale
+        . hue-rotate
+        . invert
+        . opacity
+        . sepia
+        . saturate
+        .none 
+        */
+        #container{
+            width: 600px;
+            height: 600px;
+            border: 5px solid #000;
+            background: url(images/hello.jpg) no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inner{
+            width: 400px;
+            height: 250px;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid white;
+            /*background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(4px);*/
+            /* backdrop-filter: brightness(150%); */
+            backdrop-filter: contrast(150%);
+        }
+    </style>
+</head>
+</br>
+    <h1>Hello Vaibhav : ::file-selector-button & backdrop-filter</h1>
+    <form action="">Upload File</form>
+    <input type="file" id="fileUpload">
+</br></br>
+
+    <div id="container">
+        <div id="inner">
+            <h1>hello bhau</h1>
+        </div>
+    </div>
+</body>
+</html>
